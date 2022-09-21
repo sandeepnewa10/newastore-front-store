@@ -1,0 +1,36 @@
+.service {
+    padding: 90px 0;
+    &__inner {
+        text-align: center;
+        &-icon {
+            font-size: 36px;
+            transition: all 0.9s;
+            margin-bottom: 20px;
+        }
+        &-info {
+            h4 {
+                font-size: 20px;
+                margin-bottom: 5px;
+            }
+            span {
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+        &:hover &-icon {
+            animation: flip 1s linear;
+            color: red
+        }
+        &:hover &-info h4 {
+            color: red
+        }
+    }
+}
+@keyframes flip {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}

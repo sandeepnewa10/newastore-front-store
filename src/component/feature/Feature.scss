@@ -1,0 +1,14 @@
+.feature{
+    &__inner{
+        margin-bottom: 19px;
+        &-img{}
+        &-title{
+            display: none;
+        }
+        &:hover{
+            &-title{
+                display: block;
+            }
+        }
+    }
+}

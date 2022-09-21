@@ -1,0 +1,50 @@
+.slider {
+    padding: 0;
+    margin-bottom: 30px;
+    .carousel {
+        // height: 60vh;
+        .carousel-inner {
+            @media (min-width: 992px) {
+                height: 100vh;
+            }
+            .carousel-item {
+                .carousel-caption {
+                    bottom: 0;
+                    top: 30%;
+                    h2 {
+                        font-size: 60px;
+                        font-family: "Playfair Display", serif;
+                        // font-family: 'Bebas Neue', cursive;
+                        text-transform: uppercase;
+                        margin-bottom: 2rem;
+                    }
+                    span {
+                        font-size: 28px;
+                        margin-bottom: 1.5rem;
+                    }
+
+                    @media (max-width: 767.98px) {
+                        display: none;
+                    }
+                }
+            }
+
+            :nth-child(even) {
+                .carousel-caption {
+                    text-align: left;
+                }
+            }
+
+            :nth-child(odd) {
+                .carousel-caption {
+                    text-align: right;
+                }
+            }
+        }
+        .carousel-indicators {
+            @media (max-width: 767.98px) {
+                display: none;
+            }
+        }
+    }
+}
