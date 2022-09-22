@@ -10,7 +10,7 @@
             .carousel-item {
                 .carousel-caption {
                     bottom: 0;
-                    top: 30%;
+                    top: 30%;                    
                     h2 {
                         font-size: 60px;
                         font-family: "Playfair Display", serif;
@@ -21,8 +21,8 @@
                     span {
                         font-size: 28px;
                         margin-bottom: 1.5rem;
+                        display: block;
                     }
-
                     @media (max-width: 767.98px) {
                         display: none;
                     }

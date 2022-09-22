@@ -1,2 +1,5 @@
 @import "~bootstrap/scss/bootstrap";
 @import "./style/theme.scss";
+a, button, img, input, span {
+    transition: all .3s ease 0s;
+  }

@@ -1,0 +1,39 @@
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 200px;
+    background-color: #252525;
+
+
+    h1 {
+        margin-bottom: 10px;
+        color: #fff;
+        text-transform: uppercase;
+    }
+}
+
+.breadcrumb {
+    margin-bottom: 0;
+    li{
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+}
+.btn-default{
+    border:0;
+    color: #212529;
+    margin-bottom: 1rem; 
+    border-radius: 25px;
+    padding: 10px 26px;  
+    background-color: #fff;
+    text-transform: uppercase;
+    &:hover{
+        border:0;
+        background-color: #f0f0f4;
+    }
+}
