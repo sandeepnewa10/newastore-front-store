@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import UserLayout from '../../component/layout/UserLayout'
 import MainBreadCrumb from '../../component/breadcrumb/MainBreadCrumb'
 import { Container, Row, Col, FormLabel, Form, Button } from 'react-bootstrap'
@@ -11,10 +11,18 @@ import product6 from '../../assets/product/product6.jpg';
 import product7 from '../../assets/product/product7.jpg';
 import './Product.scss';
 
+import { Swiper, SwiperSlide } from "swiper/react";
 
-
-
+// Import Swiper styles
+import "swiper/css/bundle";
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/navigation";
+import "swiper/css/thumbs";
+// import required modules
+import { FreeMode, Navigation, Thumbs } from "swiper";
 const Product = () => {
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
   return (
     <UserLayout>
       <MainBreadCrumb title="Product" />
@@ -22,7 +30,78 @@ const Product = () => {
         <Container>
           <Row>
             <aside className="col-md-6">
-              <article className='gallery-wrap'>
+
+            <Swiper
+        style={{
+          "--swiper-navigation-color": "#fff",
+          "--swiper-pagination-color": "#fff",
+        }}
+        loop={true}
+        spaceBetween={10}
+        navigation={true}
+        thumbs={{ swiper: thumbsSwiper }}
+        modules={[FreeMode, Navigation, Thumbs]}
+        className="mySwiper2"
+      >
+        <SwiperSlide>
+          <img src={product1} alt="slide" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={product2} alt="slide" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={product3} alt="slide" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={product4} alt="slide" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={product5} alt="slide" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={product6} alt="slide" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={product7} alt="slide" />
+        </SwiperSlide>       
+      </Swiper>
+      <Swiper
+      //  onSwiper={setThumbsSwiper}
+        loop={true}
+        spaceBetween={10}
+        slidesPerView={4}
+        freeMode={true}
+        watchSlidesProgress={true}
+        modules={[FreeMode, Navigation, Thumbs]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <img src={product1} alt="slide" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={product2} alt="slide" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={product3} alt="slide" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={product4} alt="slide" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={product5} alt="slide" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={product6} alt="slide" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={product7} alt="slide" />
+        </SwiperSlide>  
+      </Swiper>
+
+
+
+
+              {/* <article className='gallery-wrap'>
                 <a href="/#" className='big-image'>
                   <img src={product7} alt="" />
                 </a>
@@ -48,7 +127,7 @@ const Product = () => {
                   </a>
 
                 </div>
-              </article>
+              </article> */}
             </aside>
             <Col sm="12" md="6" lg="5">
               <article className='product-detail-page__detail'>
@@ -99,5 +178,7 @@ const Product = () => {
     </UserLayout>
   )
 }
-
+// ProductImagesSlider.propTypes = {
+//   images: PropTypes.array.isRequired
+// }
 export default Product
