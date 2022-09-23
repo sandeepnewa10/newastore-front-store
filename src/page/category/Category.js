@@ -19,6 +19,7 @@ import product13 from '../../assets/product/product6.jpg';
 import product14 from '../../assets/product/product14.jpg';
 import { FaHeart, FaSearch, FaShoppingCart } from 'react-icons/fa'
 import Pagination from '../../component/pagination/Pagination'
+import { Link } from 'react-router-dom'
 
 
 const Category = () => {
@@ -67,8 +68,9 @@ const Category = () => {
                                 <div className="product__item-img">
                                     <img src={product1} alt='caption' className="img-fluid" />
                                     <div className="product__item-img-dsc">
-                                        <span><a href="a"><i><FaShoppingCart /></i></a></span>
-                                        <span><a href="b"><i><FaSearch /></i></a></span>
+                                   
+                                        <span> <Link className="" to="/cart"><i><FaShoppingCart /></i></Link></span>
+                                        <span><Link className="" to="/product"><i><FaSearch /></i></Link></span>
                                         <span><a href="c"><i><FaHeart /></i></a></span>
                                     </div>
                                 </div>
@@ -84,8 +86,8 @@ const Category = () => {
                                 <div className="product__item-img">
                                     <img src={product2} alt='caption' className="img-fluid" />
                                     <div className="product__item-img-dsc">
-                                        <span><a href="a"><i><FaShoppingCart /></i></a></span>
-                                        <span><a href="b"><i><FaSearch /></i></a></span>
+                                        <span> <Link className="" to="/cart"><i><FaShoppingCart /></i></Link></span>
+                                        <span><Link className="" to="/product"><i><FaSearch /></i></Link></span>
                                         <span><a href="c"><i><FaHeart /></i></a></span>
                                     </div>
                                 </div>
@@ -101,8 +103,8 @@ const Category = () => {
                                 <div className="product__item-img">
                                     <img src={product3} alt='caption' className="img-fluid" />
                                     <div className="product__item-img-dsc">
-                                        <span><a href="a"><i><FaShoppingCart /></i></a></span>
-                                        <span><a href="b"><i><FaSearch /></i></a></span>
+                                        <span><Link className="" to="/cart"><i><FaShoppingCart /></i></Link></span>
+                                        <span><Link className="" to="/product"><i><FaSearch /></i></Link></span>
                                         <span><a href="c"><i><FaHeart /></i></a></span>
                                     </div>
                                 </div>
@@ -118,8 +120,8 @@ const Category = () => {
                                 <div className="product__item-img">
                                     <img src={product4} alt='caption' className="img-fluid" />
                                     <div className="product__item-img-dsc">
-                                        <span><a href="a"><i><FaShoppingCart /></i></a></span>
-                                        <span><a href="b"><i><FaSearch /></i></a></span>
+                                        <span> <Link className="" to="/cart"><i><FaShoppingCart /></i></Link></span>
+                                        <span><Link className="" to="/product"><i><FaSearch /></i></Link></span>
                                         <span><a href="c"><i><FaHeart /></i></a></span>
                                     </div>
                                 </div>
@@ -135,8 +137,8 @@ const Category = () => {
                                 <div className="product__item-img">
                                     <img src={product5} alt='caption' className="img-fluid" />
                                     <div className="product__item-img-dsc">
-                                        <span><a href="a"><i><FaShoppingCart /></i></a></span>
-                                        <span><a href="b"><i><FaSearch /></i></a></span>
+                                        <span> <Link className="" to="/cart"><i><FaShoppingCart /></i></Link></span>
+                                        <span><Link className="" to="/product"><i><FaSearch /></i></Link></span>
                                         <span><a href="c"><i><FaHeart /></i></a></span>
                                     </div>
                                 </div>
@@ -152,8 +154,8 @@ const Category = () => {
                                 <div className="product__item-img">
                                     <img src={product6} alt='caption' className="img-fluid" />
                                     <div className="product__item-img-dsc">
-                                        <span><a href="a"><i><FaShoppingCart /></i></a></span>
-                                        <span><a href="b"><i><FaSearch /></i></a></span>
+                                        <span> <Link className="" to="/cart"><i><FaShoppingCart /></i></Link></span>
+                                        <span><Link className="" to="/product"><i><FaSearch /></i></Link></span>
                                         <span><a href="c"><i><FaHeart /></i></a></span>
                                     </div>
                                 </div>
@@ -169,8 +171,8 @@ const Category = () => {
                                 <div className="product__item-img">
                                     <img src={product7} alt='caption' className="img-fluid" />
                                     <div className="product__item-img-dsc">
-                                        <span><a href="a"><i><FaShoppingCart /></i></a></span>
-                                        <span><a href="b"><i><FaSearch /></i></a></span>
+                                        <span> <Link className="" to="/cart"><i><FaShoppingCart /></i></Link></span>
+                                        <span><Link className="" to="/product"><i><FaSearch /></i></Link></span>
                                         <span><a href="c"><i><FaHeart /></i></a></span>
                                     </div>
                                 </div>
@@ -186,8 +188,8 @@ const Category = () => {
                                 <div className="product__item-img">
                                     <img src={product8} alt='caption' className="img-fluid" />
                                     <div className="product__item-img-dsc">
-                                        <span><a href="a"><i><FaShoppingCart /></i></a></span>
-                                        <span><a href="b"><i><FaSearch /></i></a></span>
+                                        <span> <Link className="" to="/cart"><i><FaShoppingCart /></i></Link></span>
+                                        <span><Link className="" to="/product"><i><FaSearch /></i></Link></span>
                                         <span><a href="c"><i><FaHeart /></i></a></span>
                                     </div>
                                 </div>
@@ -203,8 +205,8 @@ const Category = () => {
                                 <div className="product__item-img">
                                     <img src={product9} alt='caption' className="img-fluid" />
                                     <div className="product__item-img-dsc">
-                                        <span><a href="a"><i><FaShoppingCart /></i></a></span>
-                                        <span><a href="b"><i><FaSearch /></i></a></span>
+                                        <span> <Link className="" to="/cart"><i><FaShoppingCart /></i></Link></span>
+                                        <span><Link className="" to="/product"><i><FaSearch /></i></Link></span>
                                         <span><a href="c"><i><FaHeart /></i></a></span>
                                     </div>
                                 </div>
@@ -220,8 +222,8 @@ const Category = () => {
                                 <div className="product__item-img">
                                     <img src={product10} alt='caption' className="img-fluid" />
                                     <div className="product__item-img-dsc">
-                                        <span><a href="a"><i><FaShoppingCart /></i></a></span>
-                                        <span><a href="b"><i><FaSearch /></i></a></span>
+                                        <span> <Link className="" to="/cart"><i><FaShoppingCart /></i></Link></span>
+                                        <span><Link className="" to="/product"><i><FaSearch /></i></Link></span>
                                         <span><a href="c"><i><FaHeart /></i></a></span>
                                     </div>
                                 </div>
@@ -237,8 +239,8 @@ const Category = () => {
                                 <div className="product__item-img">
                                     <img src={product11} alt='caption' className="img-fluid" />
                                     <div className="product__item-img-dsc">
-                                        <span><a href="a"><i><FaShoppingCart /></i></a></span>
-                                        <span><a href="b"><i><FaSearch /></i></a></span>
+                                        <span> <Link className="" to="/cart"><i><FaShoppingCart /></i></Link></span>
+                                        <span><Link className="" to="/product"><i><FaSearch /></i></Link></span>
                                         <span><a href="c"><i><FaHeart /></i></a></span>
                                     </div>
                                 </div>
@@ -254,8 +256,8 @@ const Category = () => {
                                 <div className="product__item-img">
                                     <img src={product12} alt='caption' className="img-fluid" />
                                     <div className="product__item-img-dsc">
-                                        <span><a href="a"><i><FaShoppingCart /></i></a></span>
-                                        <span><a href="b"><i><FaSearch /></i></a></span>
+                                        <span> <Link className="" to="/cart"><i><FaShoppingCart /></i></Link></span>
+                                        <span><Link className="" to="/product"><i><FaSearch /></i></Link></span>
                                         <span><a href="c"><i><FaHeart /></i></a></span>
                                     </div>
                                 </div>
@@ -271,8 +273,8 @@ const Category = () => {
                                 <div className="product__item-img">
                                     <img src={product13} alt='caption' className="img-fluid" />
                                     <div className="product__item-img-dsc">
-                                        <span><a href="a"><i><FaShoppingCart /></i></a></span>
-                                        <span><a href="b"><i><FaSearch /></i></a></span>
+                                        <span> <Link className="" to="/cart"><i><FaShoppingCart /></i></Link></span>
+                                        <span><Link className="" to="/product"><i><FaSearch /></i></Link></span>
                                         <span><a href="c"><i><FaHeart /></i></a></span>
                                     </div>
                                 </div>
@@ -288,8 +290,8 @@ const Category = () => {
                                 <div className="product__item-img">
                                     <img src={product14} alt='caption' className="img-fluid" />
                                     <div className="product__item-img-dsc">
-                                        <span><a href="a"><i><FaShoppingCart /></i></a></span>
-                                        <span><a href="b"><i><FaSearch /></i></a></span>
+                                        <span> <Link className="" to="/cart"><i><FaShoppingCart /></i></Link></span>
+                                        <span><Link className="" to="/product"><i><FaSearch /></i></Link></span>
                                         <span><a href="c"><i><FaHeart /></i></a></span>
                                     </div>
                                 </div>
